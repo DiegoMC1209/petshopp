@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilo.css') }}"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:green;">PetDelux</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre.html" style="color: black;">Sobre</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="/consultarCliente.html" style="color: black;">Consulte-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/atualizar.html" style="color: black;">Atualizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/excluir.html" style="color: black;" >Excluir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html" style="margin-left: 1000px; color: black;">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cadastroCliente.html" style="margin-left: 10px; color: black;">Cadastre-se</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<form action="/cadastroCliente.html" method="POST">
+  <div class="container" >
+    <div class="box" style="border-radius: 30px;">
+        <br>
+        <h2 style="text-align: center; color: cadetblue;">Cadastre-se</h2>
+        <br><br>
+        <label id="lidCPF" name="nameCPF" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">CPF:</label>
+        <input type="number" id="idCPF" name="tCPF" placeholder="471.097.228.13 " style="width: 260px;"/><br><br>
+
+        <label id="lidNome" name="nameNome" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">Nome:</label>
+        <input type="text" id="idNome" name="tNome" placeholder="Joaquim Marcos Rocha " style="width: 250px;"/><br><br>
+
+        <label id="lidSenha" name="nameSenha" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">Senha:</label>
+        <input type="text" id="idSenha" name="tSenha" placeholder="a1b2c3d4"style="width: 245px;"/><br><br>
+
+        <label id="lidTelefone" name="nameTelefone" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">Telefone:</label>
+        <input type="number" id="idTelefone" name="tTelefone" placeholder="(11) 99999-9999" style="width: 230px;"/><br><br>
+
+        <label id="lidEndereco" name="nameEndereco" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">Endereço:</label>
+        <input type="text" id="idEndereco" name="tEndereco" placeholder="Rua Stanislaw ponte preta, 5" style="width: 220px;"/><br><br>
+
+        <label id="lidData" name="nameData" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 60px;">Data De Nascimento:</label>
+        <input type="date" id="idData" name="tData"/><br><br>
+
+        <button type="submit" class="btn btn-primary" style="margin-left: 250px;">Cadastrar</button>
+    </div>
+  </div>
+</form>
+  <p>{{resultado}}</p>
+</body>
+</html>
