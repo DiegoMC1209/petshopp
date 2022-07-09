@@ -22,9 +22,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/consultarCliente.html">Consulte-se</a>
           </li>
-          <li class="nav-item">
+       <!--  <li class="nav-item">
             <a class="nav-link" href="/login.html" style="margin-left: 1100px">Login</a>
-          </li>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="/cadastroCliente.html" style="margin-left: 10px; color: green;">Cadastre-se</a>
           </li>
@@ -55,4 +55,125 @@
     </form>
 </div>
 </body>
-</html>
+</html>                         
+
+
+
+
+
+
+
+
+<!--INDEX-->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilo.css') }}"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:green;">PetDelux</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/sobre.html" style="color: black;">Sobre</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/consultarCliente.html" style="color: black;">Consulte-se</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/atualizar.html" style="color: black;">Atualizar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/excluir.html" style="color: black;" >Excluir</a>
+        </li>
+      <!--  <li class="nav-item">
+          <a class="nav-link" href="/login.html" style="margin-left: 1000px; color: black;">Login</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/cadastroCliente.html" style="margin-left: 1050px; color: black;">Cadastre-se</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 style="text-align: center;"> Conheça nossos Serviços!</h1><br>
+<div class="card-group">
+  <div class="cardUm" >
+    <img src="{{ url_for('static', filename='t1.jpg') }} " class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Banho</h5>
+      <p class="card-text">Todo cuidado e carinho para quem sempre está do seu lado</p>
+
+    </div>
+  </div>
+  <div class="cardUm">
+    <img src="{{ url_for('static', filename='t2.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tosa</h5>
+      <p class="card-text">O melhor lugar para dar aquela tapa no visual do seu pet.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<h1 style="text-align: center;"> Conheça nossas Unidades!</h1><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{ url_for('static', filename='petz1.jpeg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">São Bernardo</h5>
+        <p class="card-text">Av. Rotary, 825 - Centro, São Bernardo do Campo - SP, 09721-000<br>Telefone:
+          (11) 2181-7445<br>Horário de funcionamento:<br>
+          Segunda a sábado - das 09:00 às 22:00<br>
+          Domingo e Feriado - das 09:00 às 21:00</p>
+          <a href="https://www.google.com/maps/place/Av.+Rotary,+825+-+Centro,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09721-000/data=!4m2!3m1!1s0x94ce4196a16f49e3:0x6575ce5c5a69935e?sa=X&ved=2ahUKEwihzvD1wOD4AhVLs5UCHRlIDBoQ8gF6BAgCEAE" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{ url_for('static', filename='petz6.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Santo André</h5>
+        <p class="card-text">Av. Dom Pedro II, 933 - Jardim, Santo André - SP, 09080-110<br>Telefone: (11) 2181-7313<br>Horário de funcionamento:<br>
+          Segunda a sábado - das 09:00 às 22:00<br>
+          Domingo e Feriado - das 09:00 às 21:00</p>
+          <a href="https://www.google.com/maps/place/Av.+Dom+Pedro+II,+933+-+Jardim,+Santo+Andr%C3%A9+-+SP,+09080-110/@-23.6477518,-46.5369932,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce42ea9e04d93f:0x648491d36218ed58!8m2!3d-23.6477518!4d-46.5369932" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{ url_for('static', filename='petz3.jpeg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">São Caetano</h5>
+        <p class="card-text">Av. do Estado, 1750 - Fundação, São Caetano do Sul - SP, 09550-400<br>Telefone: (11) 2181-7425<br>Segunda a sábado - das 09:00 às 22:00<br>
+          Domingo e Feriado - das 09:00 às 21:00</p>
+          <a href="https://www.google.com/maps/place/Av.+do+Estado,+1750+-+Funda%C3%A7%C3%A3o,+S%C3%A3o+Caetano+do+Sul+-+SP,+09520-180/@-23.6094472,-46.5664574,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5cfaaa6e43b1:0x90795950acd0abaa!8m2!3d-23.6094472!4d-46.5642687" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+

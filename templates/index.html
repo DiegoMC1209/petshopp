@@ -28,17 +28,73 @@
         <li class="nav-item">
           <a class="nav-link" href="/excluir.html" style="color: black;" >Excluir</a>
         </li>
-        <li class="nav-item">
+      <!--  <li class="nav-item">
           <a class="nav-link" href="/login.html" style="margin-left: 1000px; color: black;">Login</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="/cadastroCliente.html" style="margin-left: 10px; color: black;">Cadastre-se</a>
+          <a class="nav-link" href="/cadastroCliente.html" style="margin-left: 1050px; color: black;">Cadastre-se</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<h1 style="text-align: center;"> Conheça nossos Serviços!</h1><br>
+<h1 style="text-align: center;">Conheça nossos produtos!</h1>
+<div class="card-group">
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='roupa.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Roupa Porte Médio</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+    </div>
+  </div>
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='casinha.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Casa Porte Médio</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+    </div>
+  </div>
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='comida.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Ração </h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+    </div>
+  </div>
+  
+</div>
+<div class="card-group">
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='coleira.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Coleira</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+    </div>
+  </div>
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='shampoo.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Shampoo Anti Pulgas</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+    </div>
+  </div>
+  <div class="card" style="margin-left: 80px; margin-right: 80px; margin-top: 80px;  border: none; width: 300px;" >
+    <img src="{{ url_for('static', filename='sabonete.jpg') }}" class="card-img-top" alt="..." style="width: 300px;">
+    <div class="card-body">
+      <h5 class="card-title">Sabonete Anti Pulgas</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+    </div>
+  </div>
+</div>
+<h5 style="text-align: center;">Todos os produtos encontram-se em nossas <a href="#unidades">unidades</a>.</h5>
+<br><br>
+<h1 style="text-align: center;"> Conheça nossos Serviços!</h1><br><br>
 <div class="card-group">
   <div class="cardUm" >
     <img src="{{ url_for('static', filename='t1.jpg') }} " class="card-img-top" alt="...">
@@ -56,11 +112,8 @@
     </div>
   </div>
 </div>
-
-
-
-<h1 style="text-align: center;"> Conheça nossas Unidades!</h1><br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<h1 style="text-align: center;" id="unidades"> Conheça nossas Unidades!</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 50px;">
   <div class="col">
     <div class="card h-100">
       <img src="{{ url_for('static', filename='petz1.jpeg') }}" class="card-img-top" alt="...">
@@ -70,7 +123,7 @@
           (11) 2181-7445<br>Horário de funcionamento:<br>
           Segunda a sábado - das 09:00 às 22:00<br>
           Domingo e Feriado - das 09:00 às 21:00</p>
-          <a href="https://www.google.com/maps/place/Av.+Rotary,+825+-+Centro,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09721-000/data=!4m2!3m1!1s0x94ce4196a16f49e3:0x6575ce5c5a69935e?sa=X&ved=2ahUKEwihzvD1wOD4AhVLs5UCHRlIDBoQ8gF6BAgCEAE" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+          <a href="https://www.google.com/maps/place/Av.+Rotary,+825+-+Centro,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09721-000/data=!4m2!3m1!1s0x94ce4196a16f49e3:0x6575ce5c5a69935e?sa=X&ved=2ahUKEwihzvD1wOD4AhVLs5UCHRlIDBoQ8gF6BAgCEAE" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 400px; margin-top: 5px;"> Ir!</button></a>
         </div>
     </div>
   </div>
@@ -82,7 +135,7 @@
         <p class="card-text">Av. Dom Pedro II, 933 - Jardim, Santo André - SP, 09080-110<br>Telefone: (11) 2181-7313<br>Horário de funcionamento:<br>
           Segunda a sábado - das 09:00 às 22:00<br>
           Domingo e Feriado - das 09:00 às 21:00</p>
-          <a href="https://www.google.com/maps/place/Av.+Dom+Pedro+II,+933+-+Jardim,+Santo+Andr%C3%A9+-+SP,+09080-110/@-23.6477518,-46.5369932,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce42ea9e04d93f:0x648491d36218ed58!8m2!3d-23.6477518!4d-46.5369932" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+          <a href="https://www.google.com/maps/place/Av.+Dom+Pedro+II,+933+-+Jardim,+Santo+Andr%C3%A9+-+SP,+09080-110/@-23.6477518,-46.5369932,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce42ea9e04d93f:0x648491d36218ed58!8m2!3d-23.6477518!4d-46.5369932" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 400px; margin-top: 30px;"> Ir!</button></a>
       </div>
     </div>
   </div>
@@ -93,10 +146,16 @@
         <h5 class="card-title">São Caetano</h5>
         <p class="card-text">Av. do Estado, 1750 - Fundação, São Caetano do Sul - SP, 09550-400<br>Telefone: (11) 2181-7425<br>Segunda a sábado - das 09:00 às 22:00<br>
           Domingo e Feriado - das 09:00 às 21:00</p>
-          <a href="https://www.google.com/maps/place/Av.+do+Estado,+1750+-+Funda%C3%A7%C3%A3o,+S%C3%A3o+Caetano+do+Sul+-+SP,+09520-180/@-23.6094472,-46.5664574,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5cfaaa6e43b1:0x90795950acd0abaa!8m2!3d-23.6094472!4d-46.5642687" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 450px;"> Ir!</button></a>
+          <a href="https://www.google.com/maps/place/Av.+do+Estado,+1750+-+Funda%C3%A7%C3%A3o,+S%C3%A3o+Caetano+do+Sul+-+SP,+09520-180/@-23.6094472,-46.5664574,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5cfaaa6e43b1:0x90795950acd0abaa!8m2!3d-23.6094472!4d-46.5642687" target="_blank"><button type="submit" class="btn btn-primary" style="margin-left: 400px; margin-top: 30px;"> Ir!</button></a>
       </div>
     </div>
   </div>
 </div>
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color:silver">
+    © 2022 Copyright:
+    <a class="text-dark" href="http://127.0.0.1:5000/">PetDelux.com</a>
+  </div>
+</footer>
 </body>
 
